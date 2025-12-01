@@ -26,9 +26,7 @@ services:
 
   # NestJS Backend Application
   backend:
-    build:
-      context: .
-      dockerfile: Dockerfile
+    image: rusiru2615/planning-poker-backend:latest
     container_name: planning-poker-backend
     restart: unless-stopped
     ports:
